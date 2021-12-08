@@ -3,9 +3,20 @@
 Program outputs the top n words (by occurence) from a text file, in descending order, excluding words found in common file
 """
 # setup
-# Python 3.6
-# pip install textblob
-# pip install pandas
+#   Python 3.6
+#   pip install textblob
+#   pip install pandas
+#
+# Assumptions:
+#   the input files are in the same directory as the program
+#  
+# required arguments:
+#   1 text file containing english text
+#   2 text file containing words to exclude (stop-words)
+#   3 number of results (top-n)
+#
+# running:
+# python rv_nlp.py alice_in_wonderland.txt common.txt 5
 
 # python standard library
 from pathlib import Path
